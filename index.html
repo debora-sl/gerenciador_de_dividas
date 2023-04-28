@@ -3,36 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../gerenciador_de_dividas/css/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../gerenciador_de_dividas/css/style.css">
+    <link rel="stylesheet" href="../gerenciador_de_dividas/css/cabecalho.css">
+    <link rel="stylesheet" href="../gerenciador_de_dividas/css/principal.css">
     <title>Gerenciador de Dívidas</title>
 </head>
 <body>
     <div class="cabecalho">
         <h1 class="cabecalho__titulo">Gerenciador de Dividas</h1>
+        
     </div>
+    <div class="cabecalho__linha"></div>
+    
 
-    <div class="main">
-        <input type="text" placeholder="Informe aqui o nome da Conta">
-        <input type="number" placeholder="Informe o valor da Conta em R$">
-        <button class="botaoAdicionaConta">Adicionar</button>
+    <main class="principal">
+        <div class="principal__adicionar-dividas">
+          <input type="text" placeholder="Informe aqui o nome da Conta" class="principal__input">
+            <input type="number" placeholder="Informe o valor da Conta em R$" class="principal__input">
+            <button class="botaoAdicionaConta">Adicionar</button>
+        </div>
 
-        <table class="tabelaDividas">
-            <thead>
-                <tr>Contas</tr>
-                <tr>Valor Conta</tr>
+        <table class="principal__tabela">
+            <thead >
+                <tr>
+                    <th class="principal__tabela-cabecalho">CONTAS</th>
+                    <th>VALOR DA CONTA</th>
+                </tr>
             </thead>
-            <tbody>
+            <tbody class="principal__tabela-corpo">
                 <tr>
-                    <td>IPVA</td>
+                    <td class="principal__tabela-linhas">IPVA</td>
+                    <td class="principal__tabela-linhas">500,00</td>
                 </tr>
                 <tr>
-                    <td>R$ 500,00</td>
+                    <td class="principal__tabela-linhas">ÁGUA</td>
+                    <td class="principal__tabela-linhas">100,00</td>
                 </tr>
-                <td>Total</td>
+                <tr>
+                    <td class="principal__tabela-linhas">WI-FI</td>
+                    <td class="principal__tabela-linhas">150,00</td>
+                </tr>
             </tbody>
         </table>
-    </div>
+    </main>
 
 </body>
 </html>

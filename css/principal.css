@@ -1,0 +1,57 @@
+.principal{
+    /*border: thin solid #f00c0c; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    padding: 3em;
+}
+
+.principal__adicionar-dividas{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+
+.principal__input{
+    
+    background: #3d4949;
+    border: none;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 0.75em 0em;
+    width: 500px;
+    text-align: center;
+
+}
+
+.botaoAdicionaConta{
+    background: #3d4949;
+    border: none;
+    border-radius: 15px;
+    padding: 0.5em;
+    width: 200px;
+}
+
+.principal__tabela{
+    align-items: center;
+    border: thin solid #36e6e6;
+    margin: 1em 1em;
+    
+}
+
+.principal__tabela-cabecalho{
+    padding: 1em;
+}
+.principal__tabela-corpo{
+    align-items: center;
+    border: thin solid #36e6e6; 
+    padding: 5em;
+}
+
+.principal__tabela-linhas{
+  
+    padding: 10px;
+    text-align: center;
+}
