@@ -20,9 +20,9 @@
     
 
     <main class="principal">
-        <div class="principal__adicionar-dividas" data-principal-adiciona-dividas>
-            <input type="text" placeholder="Informe aqui o nome da Conta" class="principal__input" data-principal-input>
-            <input type="number" placeholder="Informe o valor da Conta em R$" class="principal__input">
+        <div class="principal__adicionar-dividas">
+            <input type="text" id='nome-conta' class="principal__input" data-input-nome placeholder="Informe aqui o nome da Conta">
+            <input type="number" id='valor-conta' class="principal__input" data-input-valor placeholder="Informe o valor da Conta em R$">
             <button class="botaoAdicionaConta" data-botao-adiciona-conta>Adicionar</button>
         </div>
 
@@ -33,18 +33,10 @@
                     <th class="principal__tabela-cabecalho">VALOR DA CONTA</th>
                 </tr>
             </thead>
-            <tbody class="principal__tabela-corpo">
+            <tbody class="principal__tabela-corpo" data-tabela-resultado>
                 <tr>
                     <td class="principal__tabela-linhas">IPVA</td>
                     <td class="principal__tabela-linhas">500,00</td>
-                </tr>
-                <tr>
-                    <td class="principal__tabela-linhas">ÁGUA</td>
-                    <td class="principal__tabela-linhas">100,00</td>
-                </tr>
-                <tr>
-                    <td class="principal__tabela-linhas">WI-FI</td>
-                    <td class="principal__tabela-linhas">150,00</td>
                 </tr>
             </tbody>
         </table>
