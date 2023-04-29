@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../gerenciador_de_dividas/css/style.css">
     <link rel="stylesheet" href="../gerenciador_de_dividas/css/cabecalho.css">
     <link rel="stylesheet" href="../gerenciador_de_dividas/css/principal.css">
+    <link rel="stylesheet" href="../gerenciador_de_dividas/css/footer.css">
     <title>Gerenciador de Dívidas</title>
 </head>
 <body>
@@ -19,17 +20,17 @@
     
 
     <main class="principal">
-        <div class="principal__adicionar-dividas">
-          <input type="text" placeholder="Informe aqui o nome da Conta" class="principal__input">
+        <div class="principal__adicionar-dividas" data-principal-adiciona-dividas>
+            <input type="text" placeholder="Informe aqui o nome da Conta" class="principal__input" data-principal-input>
             <input type="number" placeholder="Informe o valor da Conta em R$" class="principal__input">
-            <button class="botaoAdicionaConta">Adicionar</button>
+            <button class="botaoAdicionaConta" data-botao-adiciona-conta>Adicionar</button>
         </div>
 
         <table class="principal__tabela">
             <thead >
                 <tr>
                     <th class="principal__tabela-cabecalho">CONTAS</th>
-                    <th>VALOR DA CONTA</th>
+                    <th class="principal__tabela-cabecalho">VALOR DA CONTA</th>
                 </tr>
             </thead>
             <tbody class="principal__tabela-corpo">
@@ -47,7 +48,22 @@
                 </tr>
             </tbody>
         </table>
+        <table class="principal__tabela">
+            <thead >
+                <tr>
+                    <th class="principal__tabela-cabecalho">VALOR TOTAL DE DÍVIDAS</th>
+                </tr>
+            </thead>
+            <tbody class="principal__tabela-corpo">
+                <tr>
+                    <td class="principal__tabela-linhas">1.000,00</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
-
+    <footer class="rodape">
+        <h3 class="rodape__titulo">Conquiste sua Vaga - Time 26 C</h3>
+    </footer>
 </body>
+<script src="../gerenciador_de_dividas/main.js"></script>
 </html>
