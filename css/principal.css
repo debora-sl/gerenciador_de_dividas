@@ -1,56 +1,94 @@
 .principal{
-    /*border: thin solid #f00c0c; */
+    align-items: center;
+   /* border: thin solid #c6f00c;*/
     display: flex;
     flex-direction: column;
-    margin-top: 1em;
+    margin-top: 2em;
     padding: 2em;
 }
 
-.principal__adicionar-dividas{
+.principal-formulario{
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.principal__total-contas{
     align-items: center;
+    background: #3e4b4b;
+    border: thin solid #36e6e6;
+    border-radius: 8px;
+    color: #fcfcfc;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    height: 40px;
+    width: 300px;
+}
+
+
+
+.principal__formulario-adicionar{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.principal__formulario-adicionar label{  
+    font-size: 1.10em;
+    font-weight: bold;
+    color: #fcfcfc;
+    margin: 0.05em 0.3em;
+
+}
+
+.principal__formulario-adicionar input{  
+    border: thin solid #36e6e6;
+    border-radius: 10px;
+    background: #3e4b4b;
+    color: #fcfcfc;;
+    height: 25px;
+    padding: 0.10em;
+    width: 200px;
+    text-align: center;
+}
+
+.principal__formulario-incluir{
+    color: #fcfcfc;
+    margin-left: 1em;
+}
+
+.principal__lista{
+    align-items: center;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1em;
 }
 
-.principal__input{
-    
-    background: #3d4949;
-    border: none;
-    border-radius: 5px;
-    padding: 1em;
-    margin: 0.75em 0em;
-    width: 500px;
-    text-align: center;
+.principal__lista-conta{
 
-}
-
-.botaoAdicionaConta{
-    background: #3d4949;
-    border: none;
-    border-radius: 15px;
-    padding: 0.5em;
-    width: 200px;
-}
-
-.principal__tabela{
     align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20em;
+}
+
+.principal__lista-nome{
     border: thin solid #36e6e6;
-    margin: 1em 1em;
-    
-}
-
-.principal__tabela-cabecalho{
+    margin-top: 0.150em;
     padding: 1em;
-}
-.principal__tabela-corpo{
-    align-items: center;
-    border: thin solid #36e6e6; 
-    padding: 5em;
+    width: 10em;
 }
 
-.principal__tabela-linhas{
-    padding: 10px;
+.principal__lista-valor{
+    border: thin solid #36e6e6;
+    margin-top: 0.150em;
+    padding: 1em;
+    width: 10em;
     text-align: center;
 }
+
+

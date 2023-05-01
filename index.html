@@ -20,38 +20,22 @@
 
     <main class="principal">
 
-        <div class="principal__adicionar-dividas">
-            <input type="text" id='nome-conta' class="principal__input" data-input-nome placeholder="Informe aqui o nome da Conta">
-            <input type="number" id='valor-conta' class="principal__input" data-input-valor placeholder="Informe o valor da Conta em R$">
-            <button class="botaoAdicionaConta" data-botao-adiciona-conta>Adicionar</button>
+        <div class="principal-formulario" >
+            <form action="" class="principal__formulario-adicionar" id="novaConta" data-formulario>
+                <label for="conta">Informe o nome da conta</label>
+                <input type="text" name="conta" id="conta" required>
+                <label for="conta">Informe o valor da conta</label>
+                <input type="number" name="valor" id="valor" required data-valor>
+                <input type="submit" value="Incluir" class="principal__formulario-incluir">            
+            </form>
         </div>
-
-        <table class="principal__tabela">
-            <thead >
-                <tr>
-                    <th class="principal__tabela-cabecalho">CONTAS</th>
-                    <th class="principal__tabela-cabecalho">VALOR DA CONTA</th>
-                </tr>
-            </thead>
-            <tbody class="principal__tabela-corpo" data-tabela-relatorio>
-                <tr>
-                    <td class="principal__tabela-linhas">IPVA</td>
-                    <td class="principal__tabela-linhas">500,00</td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="principal__tabela">
-            <thead >
-                <tr>
-                    <th class="principal__tabela-cabecalho">VALOR TOTAL DE DÍVIDAS</th>
-                </tr>
-            </thead>
-            <tbody class="principal__tabela-corpo">
-                <tr>
-                    <td class="principal__tabela-linhas">1.000,00</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="principal__total-contas" data-total-valor>  
+            <h3 class="principal__total-contas-titulo">Total R$: </h3>
+            <h3 data-total></h3>
+        </div>
+        <div class="principal__listas-contas">
+            <ul class="principal__lista" data-lista-conta></ul>
+        </div>
     </main>
     <footer class="rodape">
         <h3 class="rodape__titulo">Conquiste sua Vaga - Time 26 C</h3>
